@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ToDoLinz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <h1>ToDoLinz</h1>
+      <nav>
+        <ul>
+          <li><a href="#about">Über das Projekt</a></li>
+          <li><a href="#locations">Locations</a></li>
+          <li><a href="#contact">Kontakt</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+  <main>
+    <section id="about" class="about">
+      <div class="container">
+        <h2>Über das Projekt</h2>
+        <p>Das Projekt <strong>ToDoLinz</strong> hat das Ziel, die Stadt Linz als herausragendes Ziel für Gastronomie und Tourismus zu positionieren. Eine ansprechende Webseite soll den Nutzern die besten gastronomischen und touristischen Angebote in Linz präsentieren.</p>
+        <ul>
+          <li>Breite Zielgruppe: Einheimische, Touristen und Geschäftsreisende</li>
+          <li>Linz national und international bekannt machen</li>
+          <li>Lokale Wirtschaft durch Förderung touristischer Angebote stärken</li>
+          <li>Benutzerfreundlichkeit und visuelle Attraktivität der Webseite</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="locations" class="locations">
+      <div class="container">
+        <h2>Beliebte Locations in Linz</h2>
+
+        <div class="location" onclick="openModal('plusCity')">
+          <img src="" alt="Plus City" class="location-img">
+          <h3>Plus City</h3>
+          <p>Ein Shopping-Paradies mit über 150 Shops, Restaurants und Freizeitangeboten.</p>
+        </div>
+
+        <div class="location" onclick="openModal('pichlingerSee')">
+          <img src="" alt="Pichlinger See" class="location-img">
+          <h3>Pichlinger See</h3>
+          <p>Ein Naturparadies für Entspannung und Wassersport.</p>
+        </div>
+
+        <div class="location" onclick="openModal('strandbar')">
+          <img src="" alt="Strandbar Linz" class="location-img">
+          <h3>Strandbar Linz</h3>
+          <p>Sommerfeeling direkt an der Donau mit Drinks, Musik und Events.</p>
+        </div>
+
+        <div class="location" onclick="openModal('urfahranermarkt')">
+          <img src="" alt="Urfahranermarkt" class="location-img">
+          <h3>Urfahranermarkt</h3>
+          <p>Ein traditioneller Markt mit Fahrgeschäften, kulinarischen Highlights und Unterhaltung.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2024 ToDoLinz. Alle Rechte vorbehalten.</p>
+      <p>Kontakt: <a href="mailto:info@todolinz.at">info@todolinz.at</a></p>
+    </div>
+  </footer>
+
+  <button id="back-to-top" onclick="scrollToTop()">⬆</button>
+
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <div id="modal-info"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
