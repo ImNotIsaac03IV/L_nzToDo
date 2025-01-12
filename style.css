@@ -61,17 +61,19 @@ body {
   margin-bottom: 2em;
   text-align: center;
   cursor: pointer;
-  transition: transform 0.2s;
-  border: 1px solid #ddd; 
+  transition: transform 0.2s, background-color 0.3s, border-color 0.3s, box-shadow 0.3s;
+  border: 1px solid #ddd;
   padding: 1em;
-  border-radius: 8px;
+  border-radius: 12px;
   background-color: #f9f9f9; 
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
 }
 
 .location:hover {
-  transform: scale(1.05);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05); 
+  background-color: #e0e0e0; 
+  border-color: #ff6600; 
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); 
 }
 
 .location-img {
@@ -80,6 +82,7 @@ body {
   border-radius: 8px;
   margin-bottom: 1em;
 }
+
 
 .modal {
   display: none;
