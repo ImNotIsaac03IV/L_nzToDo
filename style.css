@@ -3,7 +3,8 @@ body {
   line-height: 1.6;
   margin: 0;
   padding: 0;
-  color: #333;
+  color: #000; /* Set text color to black */
+  background: #fff; /* Set background to white */
 }
 
 .container {
@@ -13,8 +14,8 @@ body {
 }
 
 .header {
-  background: #444;
-  color: #fff;
+  background: #fff; /* Set header background to white */
+  color: #000; /* Set header text color to black */
   padding: 1em 0;
   text-align: center;
 }
@@ -34,7 +35,7 @@ body {
 }
 
 .header nav ul li a {
-  color: #fff;
+  color: #000; /* Set nav link color to black */
   text-decoration: none;
   font-weight: bold;
 }
