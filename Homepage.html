@@ -5,28 +5,29 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ToDoLinz</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
   <header class="header">
     <div class="container">
-      <h1>ToDoLinz</h1>
+      <h1 class="display-4">ToDoLinz</h1>
       <nav>
-        <ul>
-          <li><a href="#about">Über</a></li>
-          <li><a href="#locations">Locations</a></li>
-          <li><a href="#contact">Kontakt</a></li>
-          <li><a href="tourism.html">Tourismus</a></li>
+        <ul class="nav">
+          <li class="nav-item"><a href="#about" class="nav-link">Über</a></li>
+          <li class="nav-item"><a href="#locations" class="nav-link">Locations</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Kontakt</a></li>
+          <li class="nav-item"><a href="tourism.html" class="nav-link">Tourismus</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
   <main>
-    <section id="about" class="about">
+    <section id="about" class="about py-5">
       <div class="container">
-        <h2>Über das Projekt</h2>
+        <h2 class="display-4">Über das Projekt</h2>
         <p><strong>ToDoLinz</strong> ist eine Plattform für Gastronomie und Tourismus in Linz, die sowohl Einheimischen als auch Touristen die besten Angebote zeigt.</p>
         <ul>
           <li>Vielfältige Zielgruppe: Einheimische, Touristen, Geschäftsreisende</li>
@@ -36,128 +37,187 @@
       </div>
     </section>
 
-    <section id="locations" class="locations">
+    <section id="locations" class="locations py-5">
       <div class="container">
-        <h2>Beliebte Locations</h2>
+        <h2 class="display-4">Beliebte Locations</h2>
 
-        <div class="location" onclick="openModal('plusCity')">
-          <h3>Plus City</h3>
-          <p>Shopping, Freizeit und Gastronomie vereint in der PlusCity!</p>
-          <ul>
-            <li>150+ Shops</li>
-            <li>Freizeitmöglichkeiten & Kino</li>
-            <li>Gastronomievielfalt</li>
-          </ul>
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <div class="location card">
+              <a href="Pluscity.html">
+                <h3 class="card-header">Plus City</h3>
+                <div class="card-body">
+                  <p class="card-text">Shopping, Freizeit und Gastronomie vereint in der PlusCity!</p>
+                  <ul>
+                    <li>150+ Shops</li>
+                    <li>Freizeitmöglichkeiten & Kino</li>
+                    <li>Gastronomievielfalt</li>
+                  </ul>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-4">
+            <div class="location card">
+              <a href="Urfahranermarkt.html">
+                <h3 class="card-header">Urfahranermarkt (Urfix)</h3>
+                <div class="card-body">
+                  <p class="card-text">Tradition und Spaß auf dem Urfahranermarkt!</p>
+                  <ul>
+                    <li>Kulinarische Vielfalt</li>
+                    <li>Fahrgeschäfte & Shopping</li>
+                    <li>Live-Musik & Events</li>
+                  </ul>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-4">
+            <div class="location card">
+              <a href="Strandbar.html">
+                <h3 class="card-header">Strandbar Linz</h3>
+                <div class="card-body">
+                  <p class="card-text">Sommerfeeling direkt an der Donau!</p>
+                  <ul>
+                    <li>Erfrischende Drinks</li>
+                    <li>Live-Musik & Events</li>
+                    <li>Direkt am Wasser</li>
+                  </ul>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-4">
+            <div class="location card">
+              <a href="Pichlingersee.html">
+                <h3 class="card-header">Pichlinger See</h3>
+                <div class="card-body">
+                  <p class="card-text">Erholung pur am Pichlinger See!</p>
+                  <ul>
+                    <li>Wassersport & Freizeit</li>
+                    <li>Familienfreundlich</li>
+                    <li>Ganzjährig geöffnet</li>
+                  </ul>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-4">
+            <div class="location card">
+              <a href="Ars Electronica.html">
+                <h3 class="card-header">Ars Electronica</h3>
+                <div class="card-body">
+                  <p class="card-text">Die Zukunft der Kunst erleben!</p>
+                  <ul>
+                    <li>Interaktive Ausstellungen</li>
+                    <li>Digitale Innovation</li>
+                    <li>Vernetzte Kunst</li>
+                  </ul>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-4">
+            <div class="location card">
+              <a href="Musiktheater.html">
+                <h3 class="card-header">Musiktheater Linz</h3>
+                <div class="card-body">
+                  <p class="card-text">Magische Aufführungen im Musiktheater!</p>
+                  <ul>
+                    <li>Opern, Musicals, Ballett</li>
+                    <li>Internationale Künstler</li>
+                    <li>Modernste Technik</li>
+                  </ul>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-4">
+            <div class="location card">
+              <a href="Pöstlingbergbahn.html">
+                <h3 class="card-header">Pöstlingbergbahn</h3>
+                <div class="card-body">
+                  <p class="card-text">Linzer Aussicht vom Pöstlingberg!</p>
+                  <ul>
+                    <li>Historische Schmalspurbahn</li>
+                    <li>Aussicht auf Linz</li>
+                    <li>Familienfreundlich</li>
+                  </ul>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-4">
+            <div class="location card">
+              <a href="Landstraße.html">
+                <h3 class="card-header">Landstraße</h3>
+                <div class="card-body">
+                  <p class="card-text">Bummeln, Shoppen und Genießen auf der Landstraße!</p>
+                  <ul>
+                    <li>Vielfältige Geschäfte</li>
+                    <li>Cafés & Restaurants</li>
+                    <li>Kulturelles Flair</li>
+                  </ul>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-4">
+            <div class="location card">
+              <a href="Brasserie.html">
+                <h3 class="card-header">Brasserie Linz</h3>
+                <div class="card-body">
+                  <p class="card-text">Französische Küche im Herzen von Linz!</p>
+                  <ul>
+                    <li>Exquisite Weine</li>
+                    <li>Charmantes Ambiente</li>
+                    <li>Direkt an der Donau</li>
+                  </ul>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-4">
+            <div class="location card">
+              <a href="Hafenrundfahrt.html">
+                <h3 class="card-header">Hafenrundfahrt Linz</h3>
+                <div class="card-body">
+                  <p class="card-text">Linz vom Wasser aus erleben!</p>
+                  <ul>
+                    <li>Panoramablick vom Wasser</li>
+                    <li>Industrie- und Naturlandschaften</li>
+                    <li>Jede Saison ein Highlight</li>
+                  </ul>
+                </div>
+              </a>
+            </div>
+          </div>
         </div>
 
-        <div class="location" onclick="openModal('urfix')">
-          <h3>Urfahranermarkt (Urfix)</h3>
-          <p>Tradition und Spaß auf dem Urfahranermarkt!</p>
-          <ul>
-            <li>Kulinarische Vielfalt</li>
-            <li>Fahrgeschäfte & Shopping</li>
-            <li>Live-Musik & Events</li>
-          </ul>
-        </div>
-
-        <div class="location" onclick="openModal('strandbar')">
-          <h3>Strandbar Linz</h3>
-          <p>Sommerfeeling direkt an der Donau!</p>
-          <ul>
-            <li>Erfrischende Drinks</li>
-            <li>Live-Musik & Events</li>
-            <li>Direkt am Wasser</li>
-          </ul>
-        </div>
-
-        <div class="location" onclick="openModal('pichlingerSee')">
-          <h3>Pichlinger See</h3>
-          <p>Erholung pur am Pichlinger See!</p>
-          <ul>
-            <li>Wassersport & Freizeit</li>
-            <li>Familienfreundlich</li>
-            <li>Ganzjährig geöffnet</li>
-          </ul>
-        </div>
-
-        <div class="location" onclick="openModal('arsElectronica')">
-          <h3>Ars Electronica</h3>
-          <p>Die Zukunft der Kunst erleben!</p>
-          <ul>
-            <li>Interaktive Ausstellungen</li>
-            <li>Digitale Innovation</li>
-            <li>Vernetzte Kunst</li>
-          </ul>
-        </div>
-
-        <div class="location" onclick="openModal('musiktheater')">
-          <h3>Musiktheater Linz</h3>
-          <p>Magische Aufführungen im Musiktheater!</p>
-          <ul>
-            <li>Opern, Musicals, Ballett</li>
-            <li>Internationale Künstler</li>
-            <li>Modernste Technik</li>
-          </ul>
-        </div>
-
-        <div class="location" onclick="openModal('poestlingbergbahn')">
-          <h3>Pöstlingbergbahn</h3>
-          <p>Linzer Aussicht vom Pöstlingberg!</p>
-          <ul>
-            <li>Historische Schmalspurbahn</li>
-            <li>Aussicht auf Linz</li>
-            <li>Familienfreundlich</li>
-          </ul>
-        </div>
-
-        <div class="location" onclick="openModal('landstrasse')">
-          <h3>Landstraße</h3>
-          <p>Bummeln, Shoppen und Genießen auf der Landstraße!</p>
-          <ul>
-            <li>Vielfältige Geschäfte</li>
-            <li>Cafés & Restaurants</li>
-            <li>Kulturelles Flair</li>
-          </ul>
-        </div>
-
-        <div class="location" onclick="openModal('brasserieLinz')">
-          <h3>Brasserie Linz</h3>
-          <p>Französische Küche im Herzen von Linz!</p>
-          <ul>
-            <li>Exquisite Weine</li>
-            <li>Charmantes Ambiente</li>
-            <li>Direkt an der Donau</li>
-          </ul>
-        </div>
-
-        <div class="location" onclick="openModal('hafenrundfahrt')">
-          <h3>Hafenrundfahrt Linz</h3>
-          <p>Linz vom Wasser aus erleben!</p>
-          <ul>
-            <li>Panoramablick vom Wasser</li>
-            <li>Industrie- und Naturlandschaften</li>
-            <li>Jede Saison ein Highlight</li>
-          </ul>
-        </div>
       </div>
     </section>
   </main>
 
-  <footer class="footer">
+  <footer class="footer py-3 bg-dark text-white text-center">
     <div class="container">
-      <p>Kontakt: <a href="mailto:info@todolinz.at">info@todolinz.at</a></p>
+      <p>Kontakt: <a href="mailto:info@todolinz.at" class="text-white">info@todolinz.at</a></p>
     </div>
   </footer>
 
-  <button id="back-to-top" onclick="scrollToTop()">⬆</button>
+  <button id="back-to-top" class="btn btn-primary" onclick="scrollToTop()">⬆</button>
 
-  <div id="modal" class="modal">
-    <div class="modal-content">
-      <span class="close" onclick="closeModal()">&times;</span>
-      <div id="modal-info"></div>
-    </div>
-  </div>
-
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <script src="script.js"></script>
 </body>
 
