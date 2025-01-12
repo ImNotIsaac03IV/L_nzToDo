@@ -3,8 +3,8 @@ body {
   line-height: 1.6;
   margin: 0;
   padding: 0;
-  color: #000; /* Set text color to black */
-  background: #fff; /* Set background to white */
+  color: #000;
+  background: #fff;
 }
 
 .container {
@@ -14,8 +14,8 @@ body {
 }
 
 .header {
-  background: #fff; /* Set header background to white */
-  color: #000; /* Set header text color to black */
+  background: #fff;
+  color: #000; 
   padding: 1em 0;
   text-align: center;
 }
@@ -35,7 +35,7 @@ body {
 }
 
 .header nav ul li a {
-  color: #000; /* Set nav link color to black */
+  color: #000;
   text-decoration: none;
   font-weight: bold;
 }
@@ -62,10 +62,16 @@ body {
   text-align: center;
   cursor: pointer;
   transition: transform 0.2s;
+  border: 1px solid #ddd; 
+  padding: 1em;
+  border-radius: 8px;
+  background-color: #f9f9f9; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .location:hover {
   transform: scale(1.05);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
 .location-img {
