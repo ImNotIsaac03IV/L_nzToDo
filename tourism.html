@@ -4,26 +4,30 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Touristische Informationen - ToDoLinz</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="header">
-    <div class="container">
-      <h1>ToDoLinz</h1>
+  <header class="header bg-light py-3">
+    <div class="container d-flex justify-content-between align-items-center">
+      <h1 class="h3 mb-0">ToDoLinz</h1>
       <nav>
-        <ul>
-          <li><a href="Homepage.html">Startseite</a></li>
-          <li><a href="#tourism">Touristische Informationen</a></li>
-          <li><a href="index.html#contact">Kontakt</a></li>
+        <ul class="nav">
+          <li class="nav-item">
+            <a href="Homepage.html" class="nav-link text-dark">Startseite</a>
+          </li>
+          <li class="nav-item">
+            <a href="index.html#contact" class="nav-link text-dark">Kontakt</a>
+          </li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <section id="emergency" class="emergency">
+  <section id="emergency" class="emergency bg-danger text-white py-4">
     <div class="container">
-      <h2>Notrufnummern</h2>
-      <ul>
+      <h2 class="h4 text-center mb-3">Notrufnummern</h2>
+      <ul class="list-unstyled text-center">
         <li><strong>Polizei:</strong> 133</li>
         <li><strong>Feuerwehr:</strong> 122</li>
         <li><strong>Rettung:</strong> 144</li>
@@ -33,27 +37,30 @@
   </section>
 
   <main>
-    <section id="tourism" class="tourism">
+    <section id="tourism" class="tourism py-5">
       <div class="container">
-        <h2>Touristische Informationen</h2>
-        <p>Die Stadt Linz, die drittgrößte Stadt Österreichs, ist ein faszinierendes Ziel für Kultur-, Natur- und Stadtliebhaber gleichermaßen. Hier findest du alles, was dein Herz begehrt – von historischer Architektur bis hin zu moderner Kunst und atemberaubender Natur.</p>
-        <ul>
-          <li><strong>Kulturelle Highlights:</strong> Besuche das Ars Electronica Center, das Lentos Kunstmuseum oder genieße eine Aufführung im Brucknerhaus.</li>
-          <li><strong>Historische Sehenswürdigkeiten:</strong> Entdecke den Linzer Hauptplatz, das Schlossmuseum und die Pöstlingbergbahn, eine der ältesten Adhäsionsbahnen der Welt.</li>
-          <li><strong>Natur und Erholung:</strong> Spaziere entlang der Donau, entspanne in den zahlreichen Parks oder erkunde die Wanderwege im Mühlviertel.</li>
-          <li><strong>Veranstaltungen:</strong> Erlebe das Klangfestival Ars Electronica, die Linzer Klangwolke oder die jährlichen Weihnachtsmärkte.</li>
-          <li><strong>Lokale Küche:</strong> Probiere Linzer Spezialitäten wie die berühmte Linzer Torte, regionales Bier und traditionelle Schmankerl.</li>
+        <h2 class="display-4 text-center mb-4">Touristische Informationen</h2>
+        <p class="lead text-center">Die Stadt Linz, die drittgrößte Stadt Österreichs, ist ein faszinierendes Ziel für Kultur-, Natur- und Stadtliebhaber gleichermaßen. Hier findest du alles, was dein Herz begehrt – von historischer Architektur bis hin zu moderner Kunst und atemberaubender Natur.</p>
+        <ul class="list-group list-group-flush my-4">
+          <li class="list-group-item"><strong>Kulturelle Highlights:</strong> Besuche das Ars Electronica Center, das Lentos Kunstmuseum oder genieße eine Aufführung im Brucknerhaus.</li>
+          <li class="list-group-item"><strong>Historische Sehenswürdigkeiten:</strong> Entdecke den Linzer Hauptplatz, das Schlossmuseum und die Pöstlingbergbahn, eine der ältesten Adhäsionsbahnen der Welt.</li>
+          <li class="list-group-item"><strong>Natur und Erholung:</strong> Spaziere entlang der Donau, entspanne in den zahlreichen Parks oder erkunde die Wanderwege im Mühlviertel.</li>
+          <li class="list-group-item"><strong>Veranstaltungen:</strong> Erlebe das Klangfestival Ars Electronica, die Linzer Klangwolke oder die jährlichen Weihnachtsmärkte.</li>
+          <li class="list-group-item"><strong>Lokale Küche:</strong> Probiere Linzer Spezialitäten wie die berühmte Linzer Torte, regionales Bier und traditionelle Schmankerl.</li>
         </ul>
-        <p>Linz bietet eine perfekte Mischung aus Tradition und Innovation – ein ideales Ziel für einen unvergesslichen Aufenthalt!</p>
+        <p class="text-center">Linz bietet eine perfekte Mischung aus Tradition und Innovation – ein ideales Ziel für einen unvergesslichen Aufenthalt!</p>
       </div>
     </section>
   </main>
 
-  <footer class="footer">
+  <footer class="footer bg-dark text-white text-center py-3">
     <div class="container">
-      <p>© 2024 ToDoLinz - Entdecke Linz.</p>
+      <p class="mb-0">© 2024 ToDoLinz - Entdecke Linz.</p>
     </div>
   </footer>
 
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
