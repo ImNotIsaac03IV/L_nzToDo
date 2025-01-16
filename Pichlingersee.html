@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pichlinger See – Dein Naturparadies in Linz</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .location-img {
+      max-height: 300px;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="bg-light py-4">
+    <div class="container text-center">
+      <h1 class="display-4">Pichlinger See</h1>
+      <p class="lead">Erlebe pure Entspannung am Pichlinger See – Dein Naturparadies in Linz!</p>
+    </div>
+  </header>
+
+  <div class="container my-5">
+    <div class="location card shadow-lg" onclick="openModal('pichlingerSee')" style="cursor: pointer;">
+      <img src="https://example.com/pichlingersee.jpg" alt="Pichlinger See" class="card-img-top location-img rounded">
+      <div class="card-body">
+        <h3 class="card-title text-primary">Pichlinger See</h3>
+        <p class="card-text">Erlebe pure Entspannung am Pichlinger See – Dein Naturparadies in Linz!</p>
+        <p class="card-text">
+          Suchst du nach einem Ort, an dem du die Seele baumeln lassen und die Natur genießen kannst? Der Pichlinger See in Linz bietet dir genau das! Nur wenige Minuten von der Stadt entfernt, erwartet dich ein idyllisches Naherholungsgebiet, das sich perfekt für einen Ausflug mit Freunden, Familie oder einfach zum Entspannen eignet.
+        </p>
+        <p><strong>Warum Pichlinger See?</strong></p>
+        <ul class="list-unstyled">
+          <li><strong>Natur pur:</strong> Umgeben von Wäldern und Wiesen, bietet der See eine ruhige und malerische Kulisse – ideal für Spaziergänge und Picknicks.</li>
+          <li><strong>Wassersport & Freizeit:</strong> Ob Schwimmen, Stand-up Paddling oder ein Bootsausflug – der Pichlinger See lädt zu vielfältigen Aktivitäten ein. Auch Sportbegeisterte kommen beim Beachvolleyball oder Radfahren auf ihre Kosten.</li>
+          <li><strong>Erholung & Entspannung:</strong> Entspanne am Ufer, genieße die Sonne und tauche in das erfrischende Wasser ein. Der perfekte Ort, um vom Alltag abzuschalten.</li>
+          <li><strong>Familienfreundlich:</strong> Der See bietet kinderfreundliche Strände, Spielplätze und viele weitere Möglichkeiten für einen unvergesslichen Familienausflug.</li>
+          <li><strong>Ganzjährig geöffnet:</strong> Egal ob Sommer oder Winter – der Pichlinger See hat zu jeder Jahreszeit seinen besonderen Charme.</li>
+        </ul>
+        <p><strong>Pichlinger See – Dein Rückzugsort in der Natur!</strong></p>
+        <p>Ob du die Ruhe suchst oder aktiv sein möchtest, der Pichlinger See bietet für jeden etwas. Pack deine Badesachen ein, lade deine Freunde ein und genieße einen Tag voller Natur, Wasser und unvergesslicher Erlebnisse!</p>
+        <button class="btn btn-primary" data-toggle="modal" data-target="#pichlingerSeeModal">Mehr Erfahren</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="pichlingerSeeModal" tabindex="-1" role="dialog" aria-labelledby="pichlingerSeeModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="pichlingerSeeModalLabel">Pichlinger See</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>Der Pichlinger See ist ein Ort der Ruhe und Erholung, ideal für Outdoor-Aktivitäten und Naturgenuss. Entdecke den See in all seinen Facetten.</p>
+          <img src="https://example.com/pichlingersee-large.jpg" alt="Pichlinger See" class="img-fluid">
+          <p>Erlebe die Schönheit des Sees, egal zu welcher Jahreszeit!</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Schließen</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="bg-dark text-white py-3">
+    <div class="container text-center">
+      <p>&copy; 2025 Pichlinger See. Alle Rechte vorbehalten.</p>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <script>
+    function openModal(modalId) {
+      $('#' + modalId + 'Modal').modal('show');
+    }
+  </script>
+
+</body>
+</html>
