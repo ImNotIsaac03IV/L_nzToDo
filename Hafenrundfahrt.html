@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hafenrundfahrt Linz – Linz aus einer neuen Perspektive</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .location-img {
+      max-height: 300px;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="bg-light py-4">
+    <div class="container text-center">
+      <h1 class="display-4">Hafenrundfahrt Linz</h1>
+      <p class="lead">Linz aus einer neuen Perspektive – Ihre Hafenrundfahrt auf der Donau!</p>
+    </div>
+  </header>
+
+  <div class="container my-5">
+    <div class="location card shadow-lg" onclick="openModal('hafenrundfahrt')" style="cursor: pointer;">
+      <img src="https://example.com/hafenrundfahrt-linz.jpg" alt="Hafenrundfahrt Linz" class="card-img-top location-img rounded">
+      <div class="card-body">
+        <h3 class="card-title text-primary">Hafenrundfahrt Linz</h3>
+        <p class="card-text">Linz aus einer neuen Perspektive – Ihre Hafenrundfahrt auf der Donau!</p>
+        <p class="card-text">
+          Setzen Sie die Segel und entdecken Sie Linz vom Wasser aus – bei einer entspannten Hafenrundfahrt, die Ihnen einzigartige Einblicke in die Stadt und den größten Binnenhafen Österreichs bietet. Steigen Sie ein und lassen Sie sich von der Schönheit und Vielfalt des Linzer Hafens und seiner Umgebung verzaubern...
+        </p>
+        <p><strong>Warum eine Hafenrundfahrt?</strong></p>
+        <ul class="list-unstyled">
+          <li><strong>Verborgene Perspektiven:</strong> Erleben Sie Linz aus der Sicht auf dem Wasser und genießen Sie die einzigartige Verbindung von Industrie, Natur und Stadtlandschaft.</li>
+          <li><strong>Die Geschichte des Hafens:</strong> Erfahren Sie mehr über den größten Binnenhafen Österreichs und die Rolle des Flusses in der Entwicklung der Stadt.</li>
+          <li><strong>Jede Saison ein Highlight:</strong> Ob im Sommer mit einer warmen Brise oder im Winter in einer stillen, verschneiten Atmosphäre – die Hafenrundfahrt bietet das ganze Jahr über ein einzigartiges Erlebnis.</li>
+        </ul>
+        <p><strong>Nutzen Sie die Gelegenheit, Linz aus einer ganz neuen Perspektive zu entdecken!</strong></p>
+        <button class="btn btn-primary" data-toggle="modal" data-target="#hafenrundfahrtModal">Mehr Erfahren</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="hafenrundfahrtModal" tabindex="-1" role="dialog" aria-labelledby="hafenrundfahrtModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="hafenrundfahrtModalLabel">Hafenrundfahrt Linz</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>Hier können Sie mehr über die Hafenrundfahrt Linz erfahren und entdecken, wie die Stadt aus einer einzigartigen Perspektive aussieht.</p>
+          <img src="https://example.com/hafenrundfahrt-linz-large.jpg" alt="Hafenrundfahrt Linz" class="img-fluid">
+          <p>Erleben Sie Linz aus dem Wasser und genießen Sie die Kombination aus Geschichte, Natur und Stadtlandschaft während einer entspannenden Hafenrundfahrt.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Schließen</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="bg-dark text-white py-3">
+    <div class="container text-center">
+      <p>&copy; 2025 Hafenrundfahrt Linz. Alle Rechte vorbehalten.</p>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <script>
+    function openModal(modalId) {
+      $('#' + modalId + 'Modal').modal('show');
+    }
+  </script>
+
+</body>
+</html>
