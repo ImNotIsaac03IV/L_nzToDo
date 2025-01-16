@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Musiktheater Linz – Erleben Sie die Magie!</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .location-img {
+      max-height: 300px;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="bg-light py-4">
+    <div class="container text-center">
+      <h1 class="display-4">Musiktheater Linz</h1>
+      <p class="lead">Erleben Sie die Magie des Musiktheaters Linz!</p>
+    </div>
+  </header>
+
+  <div class="container my-5">
+    <div class="location card shadow-lg" onclick="openModal('musiktheater')" style="cursor: pointer;">
+      <img src="https://example.com/musiktheater-linz.jpg" alt="Musiktheater Linz" class="card-img-top location-img rounded">
+      <div class="card-body">
+        <h3 class="card-title text-primary">Musiktheater Linz</h3>
+        <p class="card-text">Erleben Sie die Magie des Musiktheaters Linz!</p>
+        <p class="card-text">
+          Tauchen Sie ein in eine Welt voller Emotionen, Leidenschaft und spektakulärer Aufführungen – im Musiktheater Linz. Hier verschmelzen klassische Meisterwerke mit innovativen Inszenierungen und einzigartigen musikalischen Erlebnissen...
+        </p>
+        <p><strong>Verpassen Sie nicht das nächste große Event!</strong></p>
+        <ul class="list-unstyled">
+          <li><strong>Vielfältige Aufführungen:</strong> Ob packende Opern, fesselnde Musicals oder atemberaubende Ballettaufführungen – das Musiktheater Linz bietet für jeden Geschmack das richtige Highlight.</li>
+          <li><strong>Einzigartige Künstler:</strong> Lassen Sie sich von internationalen Stars, herausragenden Orchestern und talentierten Künstler*innen verzaubern.</li>
+          <li><strong>Modernste Theatertechnik:</strong> Genießen Sie unvergessliche Momente in einem der modernsten und beeindruckendsten Theaterhäuser Europas.</li>
+        </ul>
+        <p><strong>Musiktheater Linz – Wo die Musik lebt. Wo die Bühne glänzt.</strong></p>
+        <p>Sichern Sie sich noch heute Ihre Tickets und lassen Sie sich von der Magie der Bühne verführen!</p>
+        <button class="btn btn-primary" data-toggle="modal" data-target="#musiktheaterModal">Mehr Erfahren</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="musiktheaterModal" tabindex="-1" role="dialog" aria-labelledby="musiktheaterModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="musiktheaterModalLabel">Musiktheater Linz</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>Hier können Sie mehr über das Musiktheater Linz erfahren und entdecken, warum dieses Theater ein wahres Meisterwerk der Kultur ist.</p>
+          <img src="https://example.com/musiktheater-linz-large.jpg" alt="Musiktheater Linz" class="img-fluid">
+          <p>Erleben Sie die Magie des Musiktheaters mit herausragenden Künstlern und modernen Inszenierungen in einem der beeindruckendsten Theater Europas.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Schließen</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="bg-dark text-white py-3">
+    <div class="container text-center">
+      <p>&copy; 2025 Musiktheater Linz. Alle Rechte vorbehalten.</p>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <script>
+    function openModal(modalId) {
+      $('#' + modalId + 'Modal').modal('show');
+    }
+  </script>
+
+</body>
+</html>
