@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PlusCity – Shopping-Paradies in Linz</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .location-img {
+      max-height: 300px;
+      object-fit: cover;
+    }
+    .location {
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="bg-light py-4">
+    <div class="container text-center">
+      <h1 class="display-4">PlusCity</h1>
+      <p class="lead">Entdecke das Shopping-Paradies in Linz – die PlusCity!</p>
+    </div>
+  </header>
+
+  <div class="container my-5">
+    <div class="location card shadow-lg" onclick="openModal('plusCity')" style="cursor: pointer;">
+      <div class="card-body">
+        <div class="row">
+          <div class="col-md-4">
+            <img src="https://example.com/pluscity1.jpg" alt="Plus City" class="location-img img-fluid rounded">
+          </div>
+          <div class="col-md-4">
+            <img src="https://example.com/pluscity2.jpg" alt="Plus City" class="location-img img-fluid rounded">
+          </div>
+          <div class="col-md-4">
+            <img src="https://example.com/pluscity3.jpg" alt="Plus City" class="location-img img-fluid rounded">
+          </div>
+        </div>
+        <h3 class="card-title text-primary mt-4">PlusCity</h3>
+        <p class="card-text">Willkommen in der PlusCity, deinem ultimativen Ziel für Shopping, Lifestyle und Freizeitspaß! Hier findest du alles, was das Herz begehrt – von Mode über Elektronik bis hin zu kulinarischen Genüssen. Mit über 150 Shops, einem vielfältigen Gastronomieangebot und tollen Freizeitmöglichkeiten ist die PlusCity der perfekte Ort für einen unvergesslichen Tag.</p>
+        <p><strong>Warum PlusCity?</strong></p>
+        <ul class="list-unstyled">
+          <li><strong>Vielfalt:</strong> Von internationalen Marken bis zu lokalen Lieblingsläden – hier ist für jeden Geschmack etwas dabei!</li>
+          <li><strong>Einkaufserlebnis:</strong> Moderne Architektur und großzügige Shopping-Flächen sorgen für ein angenehmes Ambiente.</li>
+          <li><strong>Freizeit & Spaß:</strong> Neben Shopping kannst du dich im Kino oder bei exklusiven Events entspannen.</li>
+          <li><strong>Gastronomie:</strong> Genieße die kulinarische Vielfalt in den zahlreichen Restaurants, Cafés und Food-Courts.</li>
+          <li><strong>Zentral & gut erreichbar:</strong> Direkt an der Autobahn und mit ausreichend Parkplätzen – dein Shopping-Trip wird ganz unkompliziert!</li>
+        </ul>
+        <p><strong>PlusCity – Mehr als Shopping.</strong></p>
+        <p>Komm vorbei, erlebe das Plus und mach deinen nächsten Einkaufstag zu einem Erlebnis!</p>
+        <button class="btn btn-primary" data-toggle="modal" data-target="#plusCityModal">Mehr Erfahren</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="plusCityModal" tabindex="-1" role="dialog" aria-labelledby="plusCityModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="plusCityModalLabel">PlusCity – Shopping-Paradies</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>Erlebe das vielfältige Angebot der PlusCity! Mit über 150 Shops, einem Kino, tollen Events und einer breiten gastronomischen Auswahl wird jeder Besuch zu einem besonderen Erlebnis. Hier findest du alles – von Mode bis Freizeit, von Elektronik bis Kulinarik. Komm vorbei und entdecke, was die PlusCity zu bieten hat!</p>
+          <img src="https://example.com/pluscity-large.jpg" alt="PlusCity" class="img-fluid">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Schließen</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="bg-dark text-white py-3">
+    <div class="container text-center">
+      <p>&copy; 2025 PlusCity. Alle Rechte vorbehalten.</p>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <script>
+    function openModal(modalId) {
+      $('#' + modalId + 'Modal').modal('show');
+    }
+  </script>
+
+</body>
+</html>
