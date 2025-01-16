@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brasserie Linz - Genuss in bester Lage</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .location-img {
+      max-height: 300px;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="bg-light py-4">
+    <div class="container text-center">
+      <h1 class="display-4">Brasserie Linz</h1>
+      <p class="lead">Genuss in bester Lage</p>
+    </div>
+  </header>
+
+  <div class="container my-5">
+    <div class="location card shadow-lg" onclick="openModal('brasserieLinz')" style="cursor: pointer;">
+      <img src="https://example.com/brasserie-linz.jpg" alt="Brasserie Linz" class="card-img-top location-img rounded">
+      <div class="card-body">
+        <h3 class="card-title text-primary">Brasserie Linz</h3>
+        <p class="card-text">Genuss in bester Lage – Willkommen in der Brasserie Linz!</p>
+        <p class="card-text">
+          Inmitten des pulsierenden Stadtzentrums von Linz, nur wenige Schritte von der Donau entfernt, erwartet Sie die Brasserie Linz – ein kulinarisches Refugium, das mit seinem charmanten Ambiente und seiner erstklassigen Küche begeistert...
+        </p>
+        <p><strong>Warum Brasserie Linz?</strong></p>
+        <ul class="list-unstyled">
+          <li><strong>Französisch & österreichisch:</strong> Die Brasserie vereint französische Küche mit österreichischer Gastfreundschaft und bietet saisonale Spezialitäten und internationale Klassiker.</li>
+          <li><strong>Exklusive Weinauswahl:</strong> Genießen Sie eine Auswahl an Weinen, die Ihr kulinarisches Erlebnis abrunden.</li>
+          <li><strong>Wunderschöne Lage:</strong> Direkt im Herzen von Linz, nur wenige Schritte von der Donau entfernt, bietet die Brasserie eine bezaubernde Atmosphäre und einen atemberaubenden Blick auf die Stadt.</li>
+          <li><strong>Charmantes Ambiente:</strong> Egal ob im stilvollen Innenbereich oder auf der sonnigen Terrasse – die Brasserie Linz bietet Ihnen den idealen Rahmen für ein besonderes kulinarisches Erlebnis.</li>
+        </ul>
+        <p><strong>Genießen Sie in der Brasserie Linz raffinierte Küche und die Schönheit von Linz – ein kulinarisches Highlight im Herzen der Stadt.</strong></p>
+        <button class="btn btn-primary" data-toggle="modal" data-target="#brasserieLinzModal">Mehr Erfahren</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="brasserieLinzModal" tabindex="-1" role="dialog" aria-labelledby="brasserieLinzModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="brasserieLinzModalLabel">Brasserie Linz</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>Hier können Sie mehr über die Brasserie Linz erfahren, deren elegante Atmosphäre und exquisiten kulinarischen Genüsse genießen.</p>
+          <img src="https://example.com/brasserie-linz-large.jpg" alt="Brasserie Linz" class="img-fluid">
+          <p>Die Brasserie Linz kombiniert französische Eleganz mit österreichischer Gemütlichkeit und ist der perfekte Ort für ein unvergessliches kulinarisches Erlebnis im Herzen von Linz.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Schließen</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="bg-dark text-white py-3">
+    <div class="container text-center">
+      <p>&copy; 2025 Brasserie Linz. Alle Rechte vorbehalten.</p>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <script>
+    function openModal(modalId) {
+      $('#' + modalId + 'Modal').modal('show');
+    }
+  </script>
+
+</body>
+</html>
