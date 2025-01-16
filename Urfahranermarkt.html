@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Urfahranermarkt (Urfix) – Tradition, Genuss & Spaß</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .location-img {
+      max-height: 300px;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="bg-light py-4">
+    <div class="container text-center">
+      <h1 class="display-4">Urfahranermarkt (Urfix)</h1>
+      <p class="lead">Erlebe das einzigartige Flair des Urfahranermarktes – Tradition, Genuss & Spaß!</p>
+    </div>
+  </header>
+
+  <div class="container my-5">
+    <div class="location card shadow-lg" onclick="openModal('urfix')" style="cursor: pointer;">
+      <img src="https://example.com/urfix.jpg" alt="Urfahranermarkt" class="card-img-top location-img rounded">
+      <div class="card-body">
+        <h3 class="card-title text-primary">Urfahranermarkt (Urfix)</h3>
+        <p class="card-text">Erlebe das einzigartige Flair des Urfahranermarktes – Tradition, Genuss & Spaß!</p>
+        <p class="card-text">
+          Der Urfahranermarkt ist das Highlight im Linzer Veranstaltungskalender! Seit über 200 Jahren begeistert der Markt mit einer Mischung aus Tradition, kulinarischen Genüssen, aufregenden Fahrgeschäften und einzigartigem Flair. Erlebe ein Fest für alle Sinne und tauche ein in die bunte Welt des Urfahranermarktes...
+        </p>
+        <p><strong>Warum Urfahranermarkt?</strong></p>
+        <ul class="list-unstyled">
+          <li><strong>Tradition & Kultur:</strong> Der Urfahranermarkt ist nicht nur ein Markt – er ist ein Stück Linzer Geschichte! Tauche ein in das historische Ambiente und genieße die charmante Atmosphäre.</li>
+          <li><strong>Kulinarische Vielfalt:</strong> Von traditionellen Schmankerln bis zu internationalen Leckereien – lass dich von den kulinarischen Köstlichkeiten verwöhnen. Ob süß, herzhaft oder herzhaft-süß – hier ist für jeden Geschmack etwas dabei!</li>
+          <li><strong>Spannung & Spaß:</strong> Nervenkitzel und Action gibt es in den zahlreichen Fahrgeschäften und auf dem Rummelplatz. Perfekt für die ganze Familie – oder einen aufregenden Abend mit Freunden!</li>
+          <li><strong>Shopping & Handwerk:</strong> Entdecke eine Vielzahl an Ständen mit regionalen Produkten, handgefertigten Waren und einzigartigen Souvenirs. Finde dein Lieblingsstück oder ein besonderes Geschenk!</li>
+          <li><strong>Ein Fest für alle:</strong> Der Urfahranermarkt ist mehr als nur ein Markt – er ist ein Event! Genieße Live-Musik, ein tolles Rahmenprogramm und die einzigartige Stimmung.</li>
+        </ul>
+        <p><strong>Urfahranermarkt – Ein Fest für die Sinne!</strong></p>
+        <button class="btn btn-primary" data-toggle="modal" data-target="#urfixModal">Mehr Erfahren</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="urfixModal" tabindex="-1" role="dialog" aria-labelledby="urfixModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="urfixModalLabel">Urfahranermarkt (Urfix)</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>Erlebe das einmalige Flair des Urfahranermarktes, der jedes Jahr in Linz stattfindet. Vom historischen Ambiente über kulinarische Genüsse bis hin zu aufregenden Fahrgeschäften – der Urfahranermarkt ist ein echtes Highlight!</p>
+          <img src="https://example.com/urfix-large.jpg" alt="Urfahranermarkt" class="img-fluid">
+          <p>Besuche die vielen Stände, genieße traditionelle Schmankerl und erlebe das bunte Treiben. Egal, ob du mit der Familie, Freunden oder alleine unterwegs bist – der Urfahranermarkt bietet für jeden etwas!</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Schließen</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="bg-dark text-white py-3">
+    <div class="container text-center">
+      <p>&copy; 2025 Urfahranermarkt. Alle Rechte vorbehalten.</p>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <script>
+    function openModal(modalId) {
+      $('#' + modalId + 'Modal').modal('show');
+    }
+  </script>
+
+</body>
+</html>
