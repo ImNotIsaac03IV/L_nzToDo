@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landstraße Linz – Bummeln, Shoppen, Genießen</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .location-img {
+      max-height: 300px;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="bg-light py-4">
+    <div class="container text-center">
+      <h1 class="display-4">Landstraße Linz</h1>
+      <p class="lead">Bummeln, Shoppen, Genießen – Die Landstraße in Linz erwartet Sie!</p>
+    </div>
+  </header>
+
+  <div class="container my-5">
+    <div class="location card shadow-lg" onclick="openModal('landstrasse')" style="cursor: pointer;">
+      <img src="https://example.com/landstrasse-linz.jpg" alt="Landstraße Linz" class="card-img-top location-img rounded">
+      <div class="card-body">
+        <h3 class="card-title text-primary">Landstraße</h3>
+        <p class="card-text">Bummeln, Shoppen, Genießen – Die Landstraße in Linz erwartet Sie!</p>
+        <p class="card-text">
+          Herzlich Willkommen auf der Landstraße – der pulsierenden Einkaufsmeile im Herzen von Linz! Erleben Sie das urbane Flair einer der beliebtesten Fußgängerzonen Österreichs und lassen Sie sich von einer Vielfalt an Geschäften, Cafés und Restaurants begeistern...
+        </p>
+        <p><strong>Warum Landstraße?</strong></p>
+        <ul class="list-unstyled">
+          <li><strong>Shoppingparadies:</strong> Von trendiger Mode über Designer-Boutiquen bis zu einzigartigen Souvenirs – hier ist für jeden Shopping-Geschmack etwas dabei.</li>
+          <li><strong>Gastronomie:</strong> Genießen Sie in den zahlreichen Cafés und Restaurants entlang der Straße eine entspannte Atmosphäre bei einem Kaffee oder Mittagessen.</li>
+          <li><strong>Kulturelles Flair:</strong> Veranstaltungen, Straßenkunst und die Nähe zu Sehenswürdigkeiten machen die Landstraße zu einem kulturellen Highlight.</li>
+          <li><strong>Für alle:</strong> Ob Shoppingtour, Bummel oder zum Entspannen – die Landstraße ist ein Erlebnis für jeden.</li>
+        </ul>
+        <p><strong>Shoppen, flanieren, entdecken – die Landstraße ist der perfekte Ort für jeden, der das Leben in Linz genießen möchte.</strong></p>
+        <button class="btn btn-primary" data-toggle="modal" data-target="#landstrasseModal">Mehr Erfahren</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="landstrasseModal" tabindex="-1" role="dialog" aria-labelledby="landstrasseModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="landstrasseModalLabel">Landstraße Linz</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>Hier können Sie mehr über die Landstraße Linz erfahren und entdecken, warum diese Einkaufsmeile der perfekte Ort für einen Stadtbummel ist.</p>
+          <img src="https://example.com/landstrasse-linz-large.jpg" alt="Landstraße Linz" class="img-fluid">
+          <p>Die Landstraße bietet alles, was das Herz begehrt – von Shoppen bis Schlemmen und immer mit einem kulturellen Touch.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Schließen</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="bg-dark text-white py-3">
+    <div class="container text-center">
+      <p>&copy; 2025 Landstraße Linz. Alle Rechte vorbehalten.</p>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <script>
+    function openModal(modalId) {
+      $('#' + modalId + 'Modal').modal('show');
+    }
+  </script>
+
+</body>
+</html>
