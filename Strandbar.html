@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Strandbar Linz – Dein Hotspot am Wasser</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .location-img {
+      max-height: 300px;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="bg-light py-4">
+    <div class="container text-center">
+      <h1 class="display-4">Strandbar Linz</h1>
+      <p class="lead">Genieß den Sommer in der Linzer Strandbar – Dein Hotspot am Wasser!</p>
+    </div>
+  </header>
+
+  <div class="container my-5">
+    <div class="location card shadow-lg" onclick="openModal('strandbar')" style="cursor: pointer;">
+      <img src="https://example.com/strandbar.jpg" alt="Strandbar Linz" class="card-img-top location-img rounded">
+      <div class="card-body">
+        <h3 class="card-title text-primary">Strandbar Linz</h3>
+        <p class="card-text">Genieß den Sommer in der Linzer Strandbar – Dein Hotspot am Wasser!</p>
+        <p class="card-text">
+          Sonne, Sand und gute Laune – die Linzer Strandbar ist der perfekte Ort, um den Sommer in vollen Zügen zu erleben! Direkt an der Donau gelegen, bietet dir die Strandbar das ganze Jahr über Urlaubsfeeling mitten in Linz. Egal, ob du mit Freunden, der Familie oder zu zweit kommst – hier wirst du die Seele baumeln lassen!
+        </p>
+        <p><strong>Warum Linzer Strandbar?</strong></p>
+        <ul class="list-unstyled">
+          <li><strong>Urlaubsfeeling mitten in der Stadt:</strong> Mit Blick auf die Donau, chilliger Musik und sandigen Füßen kannst du dich wie im Urlaub fühlen – und das direkt vor deiner Haustür!</li>
+          <li><strong>Erfrischende Drinks & Snacks:</strong> Lass dich mit coolen Cocktails, erfrischenden Getränken und leckeren Snacks verwöhnen – ideal für eine kleine Auszeit.</li>
+          <li><strong>Events & Live-Musik:</strong> Die Strandbar bietet regelmäßig coole Events, Live-Musik und After-Work-Partys. Der perfekte Ort, um den Feierabend zu genießen!</li>
+          <li><strong>Direkt am Wasser:</strong> Egal ob du in der Sonne liegst oder die Beine im Wasser baumeln lässt – der Blick auf die Donau sorgt für eine entspannte Atmosphäre.</li>
+          <li><strong>Familienfreundlich & gemütlich:</strong> Der Sandstrand, die Kinderfreundlichkeit und das entspannte Ambiente machen die Linzer Strandbar auch zu einem tollen Ausflugsziel für Familien.</li>
+        </ul>
+        <p><strong>Linzer Strandbar – Dein Sommerparadies in Linz!</strong></p>
+        <button class="btn btn-primary" data-toggle="modal" data-target="#strandbarModal">Mehr Erfahren</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="strandbarModal" tabindex="-1" role="dialog" aria-labelledby="strandbarModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="strandbarModalLabel">Strandbar Linz</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>Erlebe das Urlaubsfeeling direkt an der Donau in der Linzer Strandbar. Genieße coole Drinks, entspanne am Sandstrand und erlebe aufregende Events und Live-Musik. Der perfekte Ort für deinen Sommer in Linz!</p>
+          <img src="https://example.com/strandbar-large.jpg" alt="Strandbar Linz" class="img-fluid">
+          <p>Ob beim Relaxen am Sandstrand, beim Genießen eines Cocktails oder bei einem der regelmäßigen Events – die Linzer Strandbar bietet dir das ganze Jahr über Urlaubsfeeling direkt in der Stadt!</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Schließen</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="bg-dark text-white py-3">
+    <div class="container text-center">
+      <p>&copy; 2025 Linzer Strandbar. Alle Rechte vorbehalten.</p>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <script>
+    function openModal(modalId) {
+      $('#' + modalId + 'Modal').modal('show');
+    }
+  </script>
+
+</body>
+</html>
