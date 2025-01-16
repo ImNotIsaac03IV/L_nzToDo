@@ -3,8 +3,8 @@ body {
   line-height: 1.6;
   margin: 0;
   padding: 0;
-  color: #000000; /* Default Bootstrap text color */
-  background-color: #ffffff; /* Roter Hintergrund */
+  color: #000000;
+  background-color: #ffffff; 
 }
 
 .container {
@@ -14,8 +14,8 @@ body {
 }
 
 .header {
-  background: #E6D6F3; /* Light purple background */
-  color: #343a40; /* Dark gray header */
+  background: #E6D6F3; 
+  color: #343a40; 
   padding: 1em 0;
   text-align: center;
 }
@@ -23,7 +23,7 @@ body {
 .header h1 {
   margin: 0;
   font-size: 2.5em;
-  color: #007bff; /* Bootstrap primary blue */
+  color: #007bff; 
 }
 
 .header nav ul {
@@ -36,7 +36,7 @@ body {
 }
 
 .header nav ul li a {
-  color: #007bff; /* Primary blue */
+  color: #007bff;
   text-decoration: none;
   font-weight: bold;
   padding: 0.5em 1em;
@@ -47,7 +47,7 @@ body {
 .header nav ul li a:hover {
   transform: translateY(-5px);
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-  background-color: #0056b3; /* Darker blue on hover */
+  background-color: #0056b3; 
   color: #ffffff;
   border-radius: 10px;
 }
@@ -65,7 +65,7 @@ body {
 }
 
 .emergency h2:hover {
-  color: #dc3545; /* Bootstrap danger red */
+  color: #dc3545; 
 }
 
 .emergency ul {
@@ -85,13 +85,13 @@ body {
 
 .emergency ul li strong {
   font-weight: bold;
-  color: #dc3545; /* Danger red */
+  color: #000000; 
 }
 
 .locations .location {
   transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
   padding: 10px;
-  border: 2px solid #fff; /* White border for locations */
+  border: 2px solid #fff; 
   border-radius: 8px;
   margin-bottom: 10px;
   position: relative;
@@ -108,7 +108,7 @@ body {
 .locations .location:hover {
   transform: translateY(-10px);
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-  border: 3px solid #ffffff; /* White border on hover */
+  border: 3px solid #ffffff; 
   background-color: #f8f9fa;
   border-radius: 10px;
 }
@@ -118,7 +118,7 @@ body {
 }
 
 .footer {
-  background-color: #343a40; /* Dark gray footer */
+  background-color: #343a40; 
   color: #ffffff;
   padding: 1em 0;
   text-align: center;
@@ -130,7 +130,7 @@ body {
 }
 
 #back-to-top {
-  background-color: #007bff; /* Bootstrap primary blue */
+  background-color: #007bff; 
   color: #fff;
   border: none;
   padding: 1em;
@@ -143,5 +143,5 @@ body {
 }
 
 #back-to-top:hover {
-  background-color: #0056b3; /* Darker blue on hover */
+  background-color: #0056b3; 
 }
