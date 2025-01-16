@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ars Electronica - Die Zukunft der Kunst</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .location-img {
+      max-height: 300px;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="bg-light py-4">
+    <div class="container text-center">
+      <h1 class="display-4">Ars Electronica</h1>
+      <p class="lead">Die Zukunft der Kunst erleben</p>
+    </div>
+  </header>
+
+  <div class="container my-5">
+    <div class="location card shadow-lg" onclick="openModal('arsElectronica')" style="cursor: pointer;">
+      <img src="https://example.com/ars-electronica.jpg" alt="Ars Electronica" class="card-img-top location-img rounded">
+      <div class="card-body">
+        <h3 class="card-title text-primary">Ars Electronica</h3>
+        <p class="card-text">Ars Electronica – Die Zukunft der Kunst erleben</p>
+        <p class="card-text">
+          Tauchen Sie ein in die faszinierende Welt der digitalen Kunst, Technologie und Innovation – bei der Ars Electronica in Linz! 
+          Als eines der bedeutendsten Festivals für digitale Kultur weltweit, bietet die Ars Electronica eine einzigartige Plattform, um die Zukunft der Kunst zu entdecken...
+        </p>
+        <p><strong>Warum Ars Electronica?</strong></p>
+        <ul class="list-unstyled">
+          <li><strong>Grenzenlose Kreativität:</strong> Erleben Sie interaktive Ausstellungen, atemberaubende Installationen und innovative Performances, die Kunst, Wissenschaft und Technologie miteinander verbinden.</li>
+          <li><strong>Digitale Innovation:</strong> Sehen Sie, wie die Zukunft der Kunst aussieht – von KI-gesteuerten Kunstwerken bis zu Virtual-Reality-Installationen.</li>
+          <li><strong>Inspiriert von Linz:</strong> Nutzen Sie die einzigartige urbane Kulisse und die kreative Atmosphäre von Linz, um neue Dimensionen der digitalen Kunst zu erleben.</li>
+        </ul>
+        <p><strong>Die Ars Electronica ist der perfekte Ort, um die Kunst von morgen zu erleben und die neuesten Technologien hautnah zu entdecken.</strong></p>
+        <button class="btn btn-primary" data-toggle="modal" data-target="#arsElectronicaModal">Mehr Erfahren</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="arsElectronicaModal" tabindex="-1" role="dialog" aria-labelledby="arsElectronicaModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="arsElectronicaModalLabel">Ars Electronica</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>Hier können Sie mehr über die Ars Electronica erfahren, die faszinierende Welt der digitalen Kunst erleben und mit den neuesten Technologien interagieren.</p>
+          <img src="https://example.com/ars-electronica-large.jpg" alt="Ars Electronica" class="img-fluid">
+          <p>Die Ars Electronica in Linz ist nicht nur ein Festival, sondern ein Erlebnis, das Sie in die Zukunft der digitalen Kunst und Technologie eintauchen lässt. Verpassen Sie nicht die Gelegenheit, an diesem einzigartigen Event teilzunehmen!</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Schließen</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="bg-dark text-white py-3">
+    <div class="container text-center">
+      <p>&copy; 2025 Ars Electronica. Alle Rechte vorbehalten.</p>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <script>
+    function openModal(modalId) {
+      $('#' + modalId + 'Modal').modal('show');
+    }
+  </script>
+
+</body>
+</html>
