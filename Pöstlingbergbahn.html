@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pöstlingbergbahn – Linz entdecken</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .location-img {
+      max-height: 300px;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="bg-light py-4">
+    <div class="container text-center">
+      <h1 class="display-4">Pöstlingbergbahn</h1>
+      <p class="lead">Erleben Sie Linz aus einer neuen Perspektive!</p>
+    </div>
+  </header>
+
+  <div class="container my-5">
+    <div class="location card shadow-lg" onclick="openModal('poestlingbergbahn')" style="cursor: pointer;">
+      <img src="https://example.com/poestlingbergbahn.jpg" alt="Pöstlingbergbahn" class="card-img-top location-img rounded">
+      <div class="card-body">
+        <h3 class="card-title text-primary">Pöstlingbergbahn</h3>
+        <p class="card-text">Erleben Sie Linz aus einer ganz neuen Perspektive – mit der Pöstlingbergbahn!</p>
+        <p class="card-text">
+          Schweben Sie hinauf auf den Linzer Hausberg und genießen Sie eine unvergessliche Fahrt mit der historischen Pöstlingbergbahn! Seit 1898 verbindet die steilste Schmalspurbahn Österreichs das Stadtzentrum mit dem Pöstlingberg – einem der schönsten Aussichtspunkte Linz.
+        </p>
+        <p><strong>Warum Pöstlingbergbahn?</strong></p>
+        <ul class="list-unstyled">
+          <li><strong>Historische Fahrt:</strong> Erleben Sie die charmante Fahrt durch idyllische Waldlandschaften und genießen Sie den Panoramablick auf Linz.</li>
+          <li><strong>Fantastische Aussichten:</strong> Genießen Sie den atemberaubenden Blick auf Linz und das Donautal vom Gipfel des Pöstlingbergs.</li>
+          <li><strong>Sehenswürdigkeiten:</strong> Am Gipfel erwarten Sie die barocke Pöstlingbergbasilika und ein Freizeitpark für die ganze Familie.</li>
+          <li><strong>Für jedes Alter:</strong> Die Pöstlingbergbahn bietet ein einzigartiges Erlebnis für Groß und Klein.</li>
+        </ul>
+        <p><strong>Die Reise nach oben beginnt schon bei der Fahrt!</strong></p>
+        <button class="btn btn-primary" data-toggle="modal" data-target="#poestlingbergbahnModal">Mehr Erfahren</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="poestlingbergbahnModal" tabindex="-1" role="dialog" aria-labelledby="poestlingbergbahnModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="poestlingbergbahnModalLabel">Pöstlingbergbahn</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>Erleben Sie die Pöstlingbergbahn in Linz und genießen Sie eine faszinierende Fahrt mit einem einzigartigen Blick auf die Stadt und das Donautal. Entdecken Sie auch die vielen Sehenswürdigkeiten am Gipfel!</p>
+          <img src="https://example.com/poestlingbergbahn-large.jpg" alt="Pöstlingbergbahn" class="img-fluid">
+          <p>Die Pöstlingbergbahn bietet nicht nur eine historische Fahrt, sondern auch fantastische Ausblicke und Sehenswürdigkeiten für die ganze Familie. Ein Highlight in Linz, das Sie nicht verpassen sollten!</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Schließen</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="bg-dark text-white py-3">
+    <div class="container text-center">
+      <p>&copy; 2025 Pöstlingbergbahn. Alle Rechte vorbehalten.</p>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <script>
+    function openModal(modalId) {
+      $('#' + modalId + 'Modal').modal('show');
+    }
+  </script>
+
+</body>
+</html>
