@@ -1,0 +1,91 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+h1, h2, h3 {
+  font-family: 'Georgia', serif;
+  font-weight: bold;
+  margin: 0 0 10px;
+  color: #222;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 0 0 20px;
+}
+
+/* Header Styles */
+.header {
+  background-image: url('sandfarbe beige.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center; 
+  padding: 50px 0;
+}
+
+.header h1 {
+  font-size: 48px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.header p {
+  font-size: 20px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+/* Routes Section */
+.routes-section {
+  background-color: #f9f9f9;
+  padding: 60px 20px;
+}
+
+.routes-section h2 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+.route {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.route img {
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.route-text {
+  flex: 1;
+  padding: 20px;
+}
+
+.route-text h3 {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.route-text p {
+  font-size: 16px;
+  color: #666;
+}
+
+/* Footer Styles */
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 14px;
+}
