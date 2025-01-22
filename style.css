@@ -4,7 +4,10 @@ body {
   margin: 0;
   padding: 0;
   color: #000000;
-  background-color: #ffffff; 
+  background-color: #ffffff; /* x: Hintergrundfarbe der gesamten Seite */
+  background-image: url('Bilder/sandfarbe beige.jpg'); /* x: Hintergrundbild */
+  background-size: cover; /* x: Das Bild deckt den gesamten Hintergrund ab */
+  background-position: center; /* x: Bild wird zentriert */
 }
 
 .container {
