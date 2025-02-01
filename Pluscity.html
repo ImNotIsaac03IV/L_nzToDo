@@ -4,38 +4,31 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PlusCity – Shopping-Paradies in Linz</title>
-  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-  <style>
-    .location-img {
-      max-height: 300px;
-      object-fit: cover;
-    }
-    .location {
-      cursor: pointer;
-    }
-  </style>
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <header class="bg-light py-4">
-    <div class="container text-center">
+  <header class="full-header">
+    <div class="container2 text-center">
+      <img src="Bilder/Panorama-Linz1©juergenbrochmann2009.jpg" alt="ToDoLinz Logo" class="header-image">
       <h1 class="display-4">PlusCity</h1>
-      <p class="lead">Entdecke das Shopping-Paradies in Linz – die PlusCity!</p>
+      <p class="header-description">Entdecke das Shopping-Paradies in Linz – die PlusCity!</p>
     </div>
   </header>
 
   <div class="container my-5">
-    <div class="location card shadow-lg" onclick="openModal('plusCity')" style="cursor: pointer;">
+    <div class="location card shadow-lg" style="cursor: pointer;">
       <div class="card-body">
-        <div class="row">
+        <div class="row image-triple">
           <div class="col-md-4">
-            <img src="https://example.com/pluscity1.jpg" alt="Plus City" class="location-img img-fluid rounded">
+            <img src="Bilder/Pluscity1.jpg" alt="Plus City">
           </div>
           <div class="col-md-4">
-            <img src="https://example.com/pluscity2.jpg" alt="Plus City" class="location-img img-fluid rounded">
+            <img src="Bilder/Pluscity2.jpg" alt="Plus City">
           </div>
           <div class="col-md-4">
-            <img src="https://example.com/pluscity3.jpg" alt="Plus City" class="location-img img-fluid rounded">
+            <img src="Bilder/Pluscity3.jpeg" alt="Plus City">
           </div>
         </div>
         <h3 class="card-title text-primary mt-4">PlusCity</h3>
@@ -66,7 +59,6 @@
         </div>
         <div class="modal-body">
           <p>Erlebe das vielfältige Angebot der PlusCity! Mit über 150 Shops, einem Kino, tollen Events und einer breiten gastronomischen Auswahl wird jeder Besuch zu einem besonderen Erlebnis. Hier findest du alles – von Mode bis Freizeit, von Elektronik bis Kulinarik. Komm vorbei und entdecke, was die PlusCity zu bieten hat!</p>
-          <img src="https://example.com/pluscity-large.jpg" alt="PlusCity" class="img-fluid">
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Schließen</button>
@@ -81,9 +73,7 @@
     </div>
   </footer>
 
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
   <script>
     function openModal(modalId) {

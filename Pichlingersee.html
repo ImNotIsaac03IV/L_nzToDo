@@ -4,27 +4,33 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pichlinger See – Dein Naturparadies in Linz</title>
-  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-  <style>
-    .location-img {
-      max-height: 300px;
-      object-fit: cover;
-    }
-  </style>
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <header class="bg-light py-4">
-    <div class="container text-center">
+  <header class="full-header">
+    <div class="container2 text-center">
+      <img src="Bilder/Panorama-Linz1©juergenbrochmann2009.jpg" alt="ToDoLinz Logo" class="header-image">
       <h1 class="display-4">Pichlinger See</h1>
-      <p class="lead">Erlebe pure Entspannung am Pichlinger See – Dein Naturparadies in Linz!</p>
+      <p class="header-description">Erlebe pure Entspannung am Pichlinger See – Dein Naturparadies in Linz!</p>
     </div>
   </header>
 
   <div class="container my-5">
-    <div class="location card shadow-lg" onclick="openModal('pichlingerSee')" style="cursor: pointer;">
-      <img src="https://example.com/pichlingersee.jpg" alt="Pichlinger See" class="card-img-top location-img rounded">
+    <div class="location card shadow-lg" style="cursor: pointer;">
       <div class="card-body">
+        <div class="row image-triple">
+          <div class="col-md-4">
+            <img src="Bilder/Pichlingersee1.jpg" alt="Pichlinger See">
+          </div>
+          <div class="col-md-4">
+            <img src="Bilder/Pichlingersee2.jpg" alt="Pichlinger See">
+          </div>
+          <div class="col-md-4">
+            <img src="Bilder/Pichlingersee3.jpg" alt="Pichlinger See">
+          </div>
+        </div>
         <h3 class="card-title text-primary">Pichlinger See</h3>
         <p class="card-text">Erlebe pure Entspannung am Pichlinger See – Dein Naturparadies in Linz!</p>
         <p class="card-text">
@@ -56,7 +62,6 @@
         </div>
         <div class="modal-body">
           <p>Der Pichlinger See ist ein Ort der Ruhe und Erholung, ideal für Outdoor-Aktivitäten und Naturgenuss. Entdecke den See in all seinen Facetten.</p>
-          <img src="https://example.com/pichlingersee-large.jpg" alt="Pichlinger See" class="img-fluid">
           <p>Erlebe die Schönheit des Sees, egal zu welcher Jahreszeit!</p>
         </div>
         <div class="modal-footer">
@@ -72,9 +77,7 @@
     </div>
   </footer>
 
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
   <script>
     function openModal(modalId) {

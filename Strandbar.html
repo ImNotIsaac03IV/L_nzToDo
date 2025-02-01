@@ -4,27 +4,33 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Strandbar Linz – Dein Hotspot am Wasser</title>
-  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-  <style>
-    .location-img {
-      max-height: 300px;
-      object-fit: cover;
-    }
-  </style>
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <header class="bg-light py-4">
-    <div class="container text-center">
+  <header class="full-header">
+    <div class="container2 text-center">
+      <img src="Bilder/Panorama-Linz1©juergenbrochmann2009.jpg" alt="ToDoLinz Logo" class="header-image">
       <h1 class="display-4">Strandbar Linz</h1>
-      <p class="lead">Genieß den Sommer in der Linzer Strandbar – Dein Hotspot am Wasser!</p>
+      <p class="header-description">Genieß den Sommer in der Linzer Strandbar – Dein Hotspot am Wasser!</p>
     </div>
   </header>
 
   <div class="container my-5">
-    <div class="location card shadow-lg" onclick="openModal('strandbar')" style="cursor: pointer;">
-      <img src="https://example.com/strandbar.jpg" alt="Strandbar Linz" class="card-img-top location-img rounded">
+    <div class="location card shadow-lg" style="cursor: pointer;">
       <div class="card-body">
+        <div class="row image-triple">
+          <div class="col-md-4">
+            <img src="Bilder/Strandbar1.jpg" alt="Strandbar Linz">
+          </div>
+          <div class="col-md-4">
+            <img src="Bilder/Strandbar2.jpg" alt="Strandbar Linz">
+          </div>
+          <div class="col-md-4">
+            <img src="Bilder/Strandbar3.jpg" alt="Strandbar Linz">
+          </div>
+        </div>
         <h3 class="card-title text-primary">Strandbar Linz</h3>
         <p class="card-text">Genieß den Sommer in der Linzer Strandbar – Dein Hotspot am Wasser!</p>
         <p class="card-text">
@@ -55,7 +61,6 @@
         </div>
         <div class="modal-body">
           <p>Erlebe das Urlaubsfeeling direkt an der Donau in der Linzer Strandbar. Genieße coole Drinks, entspanne am Sandstrand und erlebe aufregende Events und Live-Musik. Der perfekte Ort für deinen Sommer in Linz!</p>
-          <img src="https://example.com/strandbar-large.jpg" alt="Strandbar Linz" class="img-fluid">
           <p>Ob beim Relaxen am Sandstrand, beim Genießen eines Cocktails oder bei einem der regelmäßigen Events – die Linzer Strandbar bietet dir das ganze Jahr über Urlaubsfeeling direkt in der Stadt!</p>
         </div>
         <div class="modal-footer">
@@ -71,9 +76,7 @@
     </div>
   </footer>
 
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
   <script>
     function openModal(modalId) {

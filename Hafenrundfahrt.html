@@ -4,27 +4,33 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hafenrundfahrt Linz – Linz aus einer neuen Perspektive</title>
-  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-  <style>
-    .location-img {
-      max-height: 300px;
-      object-fit: cover;
-    }
-  </style>
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <header class="bg-light py-4">
-    <div class="container text-center">
+  <header class="full-header">
+    <div class="container2 text-center">
+      <img src="Bilder/Panorama-Linz1©juergenbrochmann2009.jpg" alt="ToDoLinz Logo" class="header-image">
       <h1 class="display-4">Hafenrundfahrt Linz</h1>
-      <p class="lead">Linz aus einer neuen Perspektive – Ihre Hafenrundfahrt auf der Donau!</p>
+      <p class="header-description">Linz aus einer neuen Perspektive – Ihre Hafenrundfahrt auf der Donau!</p>
     </div>
   </header>
 
   <div class="container my-5">
-    <div class="location card shadow-lg" onclick="openModal('hafenrundfahrt')" style="cursor: pointer;">
-      <img src="https://example.com/hafenrundfahrt-linz.jpg" alt="Hafenrundfahrt Linz" class="card-img-top location-img rounded">
+    <div class="location card shadow-lg" style="cursor: pointer;">
       <div class="card-body">
+        <div class="row image-triple">
+          <div class="col-md-4">
+            <img src="Bilder/hafenrundfahrt linz .jpg" alt="Hafenrundfahrt">
+          </div>
+          <div class="col-md-4">
+            <img src="Bilder/Donaufahrt_2.jpg" alt="Hafenrundfahrt">
+          </div>
+          <div class="col-md-4">
+            <img src="Bilder/Donaufahrt_3.jpeg" alt="Hafenrundfahrt">
+          </div>
+        </div>
         <h3 class="card-title text-primary">Hafenrundfahrt Linz</h3>
         <p class="card-text">Linz aus einer neuen Perspektive – Ihre Hafenrundfahrt auf der Donau!</p>
         <p class="card-text">
@@ -53,7 +59,6 @@
         </div>
         <div class="modal-body">
           <p>Hier können Sie mehr über die Hafenrundfahrt Linz erfahren und entdecken, wie die Stadt aus einer einzigartigen Perspektive aussieht.</p>
-          <img src="https://example.com/hafenrundfahrt-linz-large.jpg" alt="Hafenrundfahrt Linz" class="img-fluid">
           <p>Erleben Sie Linz aus dem Wasser und genießen Sie die Kombination aus Geschichte, Natur und Stadtlandschaft während einer entspannenden Hafenrundfahrt.</p>
         </div>
         <div class="modal-footer">
@@ -69,9 +74,7 @@
     </div>
   </footer>
 
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
   <script>
     function openModal(modalId) {
