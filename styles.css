@@ -1,0 +1,285 @@
+/* Global styles */
+/* Stil für das Video als Hintergrund */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    color: white;
+}
+
+.video-background {
+    position: fixed; /* Fixiert das Video an seinem Platz */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh; /* Deckt den gesamten Bildschirm ab */
+    z-index: -1; /* Stellt sicher, dass das Video hinter dem Inhalt bleibt */
+}
+
+.video-background video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Stellt sicher, dass das Video den gesamten Bildschirm ausfüllt */
+    transform: translate(-50%, -50%); /* Zentriert das Video */
+}
+
+/* Logo */
+.logo {
+    width: 100px; /* Anpassen der Größe des Logos */
+    height: auto;
+    position: absolute; /* Absolut positioniert */
+    left: -110px; /* Abstand vom linken Rand */
+    top: 110%; /* Vertikal in der Mitte */
+    transform: translateY(-50%); /* Vertikal zentrieren */
+    opacity: 0.4; /* Transparenz für das Logo */
+    z-index: 20; /* Damit das Logo vor anderen Elementen bleibt */
+}
+
+/* Navigation */
+nav {
+    position: absolute; /* Fixed Position für Navigation */
+    top: 20px; /* Du kannst den Wert erhöhen, um mehr Abstand von oben zu bekommen */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-between; /* Elemente zwischen links und rechts verteilen */
+    align-items: center;
+    width: 80%;
+    font-size: 14px;
+    height: 60px;
+    gap: 20px;
+    z-index: 10; /* Höher als der Hintergrund */
+    margin-top: -20px; /* Füge hier einen Abstand zwischen Navigation und Überschrift hinzu */
+}
+
+nav a {
+    display: inline-block; /* Sicherstellen, dass alle Links gleich behandelt werden */
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+}
+.search {
+    margin-left: auto; /* Verschiebt das "Search"-Element ganz nach rechts */
+}
+
+
+.nav-left a, .search {
+    padding: 8px 12px; /* Einheitliche Abstände für alle Links */
+}
+
+.nav-left a:hover, .search:hover {
+    background-color: rgba(13, 0, 192, 0.8); /* Blau hervorgehoben */
+    transform: scale(1.5); /* Vergrößerungseffekt */
+    box-shadow: 0px 0px 10px rgba(13, 0, 192, 0.8); /* Leuchtender Effekt */
+}
+
+
+
+
+/* Hero container */
+.hero-container {
+    position: relative;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 2; /* Video unter dem Text */
+    padding-top: 100px;  /* Gib dem hero-container noch genug Platz nach der Navigation */
+}
+
+.background-image-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/linz-bei-nacht-2.jpg');
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+
+.hero-title {
+    font-size: 48px;
+    text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.8);
+    margin-bottom: 50px; /* Abstand nach unten */
+    margin-top: 80px; /* Abstand nach oben zur Navigation */
+}
+
+.hero-video {
+    width: calc(80% - 10cm); /* Macht das Video kleiner und gibt ihm 5 cm Abstand zu jedem Rand */
+    max-width: 120%; /* Maximale Breite auf 80% setzen */
+    margin: 0 5cm; /* 5 cm Abstand zu jedem Rand */
+    border-radius: 10px; /* Optionale Abrundung der Ecken */
+    height: auto; /* Die Höhe wird automatisch im Verhältnis zur Breite angepasst */
+    z-index: 1;
+}
+
+.hero-text {
+    margin-top: 30px;
+    font-size: 18px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+    z-index: 2; /* Text über dem Video */
+    position: relative;
+}
+
+/* Explore Section */
+.explore, .journal {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.card {
+    background-color: #333;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 350px;
+    text-align: center;
+    transition: transform 0.3s; /* Übergang für Border hinzufügen */
+    border: 2px solid transparent; /* Standardzustand mit transparentem Rand */
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 15px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    border: 2px solid white; /* Weißer Rand beim Hover */
+}
+
+button {
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #f0f0f0;
+}
+
+/* Transparent image effect */
+.ghost-image-section {
+    position: relative;
+    margin-top: 60px;
+    width: 100%;
+}
+
+.ghost-image {
+    width: 100%;
+    height: auto;
+    opacity: 0.3; /* Reduzierte Transparenz für leichte Sichtbarkeit */
+    display: block;
+    object-fit: cover;
+    position: relative; /* Sicherstellen, dass es im Layout erscheint */
+}
+
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: black;
+}
+
+footer p {
+    color: gray;
+    font-size: 14px;
+}
+
+footer nav a {
+    color: gray;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+footer nav a:hover {
+    text-decoration: underline;
+}
+
+/* Back to Top Button */
+.back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: rgb(82, 81, 81);/* Grauer Hintergrund */
+    color: white;
+    border: none;
+    border-radius: 5px; /* Optional: abgerundete Ecken */
+    font-size: 14px;
+    padding: 12px 20px; /* Rechteckige Form */
+    cursor: pointer;
+    display: block;
+    z-index: 10;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Übergangseffekte */
+}
+
+.back-to-top:hover {
+    background-color: #666;/* Etwas dunkler bei Hover */
+    transform: scale(1.1); /* Button wird etwas größer */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* Schatteneffekt beim Hover */
+    border: 2px solid white; /* Weißer Rand bei Hover */
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .grid {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .hero-title {
+        font-size: 36px; /* Smaller title for mobile */
+    }
+
+    .hero-text p {
+        font-size: 14px; /* Smaller text for mobile */
+    }
+
+    .card img {
+        height: 150px; /* Smaller images for mobile */
+    }
+}
