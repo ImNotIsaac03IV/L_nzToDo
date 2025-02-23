@@ -220,3 +220,10 @@ h1 {
 .image-triple .col-md-4 {
   flex: 1;
 }
+
+.maps-iframe{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
