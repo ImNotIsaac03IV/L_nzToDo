@@ -227,3 +227,34 @@ h1 {
   align-items: center;
   height: 100%;
 }
+
+.symbol-links{
+  display: flex;
+  justify-content: space-between; /* Symbole gleichmäßig verteilen */
+  align-items: center; /* Vertikal ausrichten */
+  width: 100%;
+  padding: 10px 0; /* Etwas Abstand für bessere visuelle Darstellung */
+}
+
+.symbol-size {
+  height: 30px;
+  width: 30px;
+  margin-right: 15px; /* Fügt einen Abstand zwischen den Symbolen hinzu */
+}
+
+.symbols {
+  display: flex; /* Die Symbole nebeneinander anordnen */
+  justify-content: flex-start; /* Symbole nach links ausrichten */
+  align-items: center; /* Symbole vertikal ausrichten */
+}
+
+.modal-footer .btn-secondary {
+  margin-left: 15px; /* Fügt einen Abstand zwischen den Symbolen und dem Button hinzu */
+}
+
+.modal-footer {
+  display: flex; /* Flexbox für den Footer aktivieren */
+  justify-content: space-between; /* Symbole nach links und Button nach rechts schieben */
+  align-items: center; /* Vertikale Ausrichtung */
+  width: 100%; /* Stellt sicher, dass die gesamte Breite des Modal-Footers genutzt wird */
+}
